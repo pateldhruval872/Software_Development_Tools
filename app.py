@@ -23,23 +23,25 @@ st.write("The histogram shows the distribution of car prices. We can observe tha
 
 # Scatter plot of price vs. model year
 st.header('Price vs. Model Year')
-fig_price_model_year = px.scatter(df, x='model_year', y='price', title='Price vs. Model Year')
-fig_price_model_year.update_layout(xaxis_title='Model Year', yaxis_title='Price')
+fig_price_model_year = px.scatter(
+    df, x='model_year', y='price', title='Price vs. Model Year')
+fig_price_model_year.update_layout(
+    xaxis_title='Model Year', yaxis_title='Price')
 st.plotly_chart(fig_price_model_year)
 st.write("The scatter plot illustrates the relationship between car prices and model years. It shows that newer car models tend to have higher prices, as expected.")
 
 # Filter to exclude expensive vehicles
-max_price = st.slider('Select the maximum price to include in the scatter plot:', min_value=int(df['price'].min()), max_value=int(df['price'].max()), value=int(df['price'].max()))
+max_price = st.slider('Select the maximum price to include in the scatter plot:', min_value=int(
+    df['price'].min()), max_value=int(df['price'].max()), value=int(df['price'].max()))
 filtered_df = df[df['price'] <= max_price]
 
-fig_filtered_price_model_year = px.scatter(filtered_df, x='model_year', y='price', title='Price vs. Model Year (Filtered)')
-fig_filtered_price_model_year.update_layout(xaxis_title='Model Year', yaxis_title='Price')
+fig_filtered_price_model_year = px.scatter(
+    filtered_df, x='model_year', y='price', title='Price vs. Model Year (Filtered)')
+fig_filtered_price_model_year.update_layout(
+    xaxis_title='Model Year', yaxis_title='Price')
 st.plotly_chart(fig_filtered_price_model_year)
-st.write(f"The scatter plot now excludes vehicles with prices higher than {max_price}. This helps us focus on the more common price range and avoid outliers.")
-
-# Checkbox to show/hide the original scatter plot
-if st.checkbox('Show Original Scatter Plot'):
-    st.plotly_chart(fig_price_model_year)
+st.write(
+    f"The scatter plot now excludes vehicles with prices higher than {max_price}. This helps us focus on the more common price range and avoid outliers.")
 
 # Overall conclusion
 st.header('Overall Conclusion')
