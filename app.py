@@ -9,9 +9,7 @@ df = pd.read_csv('vehicles_us.csv')
 # Header
 st.title('Car Advertisement Analysis')
 st.write("""
-    This analysis aims to explore the dataset of car advertisements in the United States. 
-    We will perform exploratory data analysis (EDA) to understand the distribution of car prices, 
-    and the relationship between the model year and car prices.
+    Welcome to the Car Sales Dashboard, an interactive web application designed to provide comprehensive insights into car sales advertisements.This application analyzes car sales data to uncover trends, patterns, and valuable insights. By leveraging powerful data analysis and visualization tools, users can interact with the data in meaningful ways.
 """)
 
 # Histogram of car prices
