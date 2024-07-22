@@ -1,9 +1,9 @@
 # Car Advertisement Data Analysis and Visualization
 
-https://software-development-tools-zsfp.onrender.com
+https://software-development-tools-yucj.onrender.com
 
 ## Description
-This project involves analyzing and visualizing a car advertisement dataset using various Python libraries such as pandas, streamlit, plotly.express, and altair. The goal is to perform an exploratory data analysis (EDA) and create an interactive web application dashboard to present the insights.
+This project analyzes and visualizes a car advertisement dataset using various Python libraries such as pandas, streamlit, plotly.express, and altair. The goal is to perform an exploratory data analysis (EDA) and create an interactive web application dashboard to present the insights.
 
 ## Getting Started
 
@@ -36,7 +36,7 @@ This project involves analyzing and visualizing a car advertisement dataset usin
 
 7. **Open the Project in VS Code**: Open the project directory in VS Code.
 
-8. **Set Python Interpreter**: In VS Code, set the Python interpreter to the one used by the virtual environment.
+8. **Set Python Interpreter**: In VS Code, set the Python interpreter to the one the virtual environment uses.
 
 ### Download the Data File
 Download the car advertisement dataset (vehicles_us.csv) or find your own dataset in CSV format. Place the dataset in the root directory of the project.
