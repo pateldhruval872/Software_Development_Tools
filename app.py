@@ -41,6 +41,10 @@ st.plotly_chart(fig_filtered_price_model_year)
 st.write(
     f"The scatter plot now excludes vehicles with prices higher than {max_price}. This helps us focus on the more common price range and avoid outliers.")
 
+# Checkbox to show/hide the original scatter plot
+if st.checkbox('Show Original Scatter Plot'):
+    st.plotly_chart(fig_price_model_year)
+
 # Overall conclusion
 st.header('Overall Conclusion')
 st.write("""
